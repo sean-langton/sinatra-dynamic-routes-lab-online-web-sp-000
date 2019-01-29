@@ -33,9 +33,9 @@ class App < Sinatra::Base
     @num2 = params[:number2].to_i
     if @operator == "add" then
       "#{@num1 + @num2}"
-    elsif @operator = "subtract" then
+    elsif @operator == "subtract" then
       "#{@num1 - @num2}"
-    elsif @operator = "multiply" then
+    elsif @operator == "multiply" then
       "#{@num1 * @num2}"
     elsif @operator = "divide" then
       "#{@num1 / @num2}"
