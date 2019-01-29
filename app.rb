@@ -13,7 +13,9 @@ class App < Sinatra::Base
   end
 
   get '/say/:number/:phrase' do
-    "balls"
+    @number = params[:number].to_i
+    @phrase = params[:phrase].to_s
+    @phrase
   end
 
 end
